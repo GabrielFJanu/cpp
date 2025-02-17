@@ -1,2 +1,2 @@
-# cpp
- Meus estudos de C++
+# C++
+ Repositório dedicado às minhas anotações de C++
