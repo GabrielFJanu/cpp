@@ -6,6 +6,7 @@ int global;
 
 int main(){
     int local;
-    cout << global << endl << local;
+    cout << local << endl << global << endl;
+    system("pause");
     return 0;
 }
