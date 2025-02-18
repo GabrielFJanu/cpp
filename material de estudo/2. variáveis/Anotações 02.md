@@ -34,7 +34,7 @@ int main() {
 >  * **<ins>Tempo de vida</ins>**: Existem durante toda a execução do programa.
 
 ## "lixo"
-Em C++, se eu criar uma variável `local` sem um valor padrão definido de começo, eu preciso inicializar ela (atribuir um valor inicial) antes de usá-la no programa. Caso o contrário, o valor nela será imprevisível a cada vez que iniciar o programa:
+Em C++, <ins>dependendo do compilador e do sistema operacional e de suas versões</ins>, se eu criar uma variável `local` sem um valor padrão definido de começo, eu preciso inicializar ela (atribuir um valor inicial) antes de usá-la no programa. Caso o contrário, o valor nela será imprevisível a cada vez que iniciar o programa:
 
 esse valor imprevisível, chamamos de "lixo".
 
@@ -71,6 +71,6 @@ RESPOSTA GARANTIDA:
 Valor de numero: 0
 ```
 >**Por que isso acontece?**
-O "lixo" acontece quando uma variável não inicializada ocupa um espaço na memória que já tinha algum dado antigo. Como o C++ não limpa automaticamente essa área de memória, o valor antigo continua ali e pode ser interpretado erroneamente pelo programa.
+O "lixo" acontece quando o compilador não é otimizado e uma variável não inicializada ocupa um espaço na memória que já tinha algum dado antigo. Como o C++ não limpa automaticamente essa área de memória, o valor antigo continua ali e pode ser interpretado erroneamente pelo programa.
 
-Caso uma variável `global` não tenha sido inicializada, ela terá o valor igual à 0.
+Caso uma variável `global`, ao contrário da `local`, não tenha sido inicializada, ela terá o valor igual à 0.
