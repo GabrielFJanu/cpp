@@ -48,6 +48,7 @@ int main() {
     return 0;
 }
 ```
+>`std::cin >> nome;` é uma função da biblioteca `iostream` que lê o input (nesse caso uma palavra) digitado pelo usuário e armazena em `nome`.
 
 ## locais e globais
 outra característica das variáveis em C++ são suas **classes de armazenamento**, que determinam o escopo (onde pode ser utilizada dentro do programa), tempo de vida e local de armazenamento de uma variável.
