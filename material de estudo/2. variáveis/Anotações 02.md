@@ -22,6 +22,12 @@ Declarar com um valor padrão:
 int x = 10;
 
 ```
+Declarar múltiplas variáveis:
+```cpp
+
+int x = 0, y = 32, z = -100;
+
+```
 ## Tipos
 
 Dependendo do tipo da variável, ela vai armazenar informações de diferentes naturezas: numéro inteiro, número real, valor booleano, caracteres, texto e por aí vai.
