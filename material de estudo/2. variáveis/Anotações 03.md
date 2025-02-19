@@ -109,4 +109,4 @@ Resposta no console:
 3.14159
 3.14159
 ```
->`defaultfloat` (da biblioteca `iomanip`) reverte o `fixed`
+>`defaultfloat` (da biblioteca `iomanip`) reverte o `fixed`. E `setprecision(6)` é a precisão padrão,

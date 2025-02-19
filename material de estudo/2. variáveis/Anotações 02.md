@@ -35,10 +35,9 @@ Tipo | Tamanho (aprox.) | valor armazenado | exemplo
 `bool` | 1 byte | `true` ou `false` | `bool ligado = true;`
 `string` | depende do tamanho | texto (sequência de caracteres) | `std::string nome = "gabriel"`
 
->O tipo *string*, ao contrário dos tipos primitivos, precisa do namespace `std`, pois é uma classe da biblioteca `string` (padrão do C++).
+>O tipo *string*, ao contrário dos tipos primitivos, precisa do namespace `std`, pois é uma classe da biblioteca `<string>` (padrão do C++). Em algumas implementações do C++ (compiladores), `<iostream>` pode incluir `<string>` automaticamente.
 ```cpp
 #include <iostream>
-#include <string>
 
 int main() {
     std::string nome;
