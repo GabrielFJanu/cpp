@@ -1,6 +1,6 @@
 # Operadores relacionais e lógicos
 
-Eles <ins>sempre</ins> resultarão ou em true (1) ou em false (0).
+Eles <ins>sempre</ins> resultarão ou em `true` (1) ou em `false` (0).
 | Operador | Descrição       | Exemplo                |
 |-------------|-------------------|---------------------------|
 | `==`        | Igualdade         | `(x == 10)`            |

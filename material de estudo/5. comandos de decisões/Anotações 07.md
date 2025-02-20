@@ -33,7 +33,20 @@ int main(){
     int idade;
     cout << "Digite sua idade: \n";
     cin >> idade;
-    cout << ((idade>=18) ? "Maior de idade." : "Menor de idade.") ;
+    idade>=18 ? cout << "Maior de idade." : cout << "Menor de idade.";
+    return 0;
+}
+```
+ou
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    int idade;
+    cout << "Digite sua idade: \n";
+    cin >> idade;
+    cout << (idade>=18 ? "Maior de idade." : "Menor de idade.") ;
     return 0;
 }
 ```
