@@ -77,3 +77,35 @@ int main() {
     return 0;
 }
 ```
+## Comentario
+comentário é um jeito de organizar o código. Tudo que estará escrito nele, não é compilado, ou seja, não interfere no funcionamento do código.
+
+1. comentar uma linha usando `//`:
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Ola, mundo!" << endl;
+    //essa linha é um comentário
+    return 0;
+}
+```
+2. comentar um bloco usando `/* */`:
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Ola, mundo!" << endl;
+    /* todo esse bloco
+    de código
+    é um
+    comentário
+    */
+    return 0;
+}
+```
+
