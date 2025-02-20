@@ -62,7 +62,7 @@ if(x > y){
 ```
 ou
 ```
-maior = (x > y ? x : y)
+maior = (x > y ? x : y);
 ```
 ## Múltiplas condições
 exemplo com múltiplas condições:
