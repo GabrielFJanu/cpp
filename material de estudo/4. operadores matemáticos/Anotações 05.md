@@ -30,7 +30,7 @@ Resposta no console:
 
 > o operador `%` (resto da divisão) só funciona com variáveis`int`
 
-### Caso 2: operações entre 1 `int` e um `float`
+### Caso 2: operações entre um `int` e um `float`
 
 ```cpp
 #include <iostream>
@@ -55,7 +55,7 @@ Resposta no console:
 6
 1.5
 ```
-> os resultados das operações são entre `int` e `float` são `float`
+> os resultados das operações entre `int` e `float` são `float`
 
 > caso a operação seja entre `int` (ou `float`) e `double`, o resultado será do tipo `double`
 
@@ -68,7 +68,7 @@ Ordem de precedência:
 2. `*` `/` `%`
 3. `+` `-`
 
-Operações aritméticos de níveis de precedências iguais, a que será calculada antes é <ins>mais à esquerda</ins>.
+Operações aritméticos de níveis de precedências iguais, a que será calculada antes é a <ins>mais à esquerda</ins>.
 
 ### 1.
 ```cpp
