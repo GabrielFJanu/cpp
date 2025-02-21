@@ -72,6 +72,8 @@ Resposta no console:
 9
 ```
 >**CUIDADO**: Se a condição nunca for falsa, o loop nunca termina, criando um loop infinito.
+
+>Quando a condição do while já inicia sendo falsa, o while não vai executar o bloco de comando nenhuma vez
 # Break
 é um comando que interrompe loops
 ```cpp
