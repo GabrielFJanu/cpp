@@ -1,6 +1,6 @@
 # Goto
 ## O que é
-O `goto` é uma instrução que permite pular diretamente para um `label` (rótulo) dentro do código, ignorando a sequência normal de execução.
+O `goto` **não** é uma estrutura de repetição em si, é uma instrução que permite pular diretamente para um `label` (rótulo) dentro do código, ignorando a sequência normal de execução.
 
 É uma forma de desviar o fluxo de execução, mas <ins>**não é recomendada**</ins> na maioria dos casos porque pode tornar o código difícil de entender e manter.
 ## Sintaxe do goto
@@ -75,13 +75,13 @@ Resposta no console:
 
 >Quando a condição do while já inicia sendo falsa, o while não vai executar o bloco de comando nenhuma vez
 # Break
-é um comando que interrompe loops
+é um comando que interrompe loops (funciona em qualquer estrutura de repetição: `while`, `for`, `do-while`)
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main(){
-    int i;
+    int i = 0;
     while(1){ // 1 = true
         if(i==10){
             break;
@@ -106,4 +106,35 @@ Resposta no console:
 7
 8
 9
+```
+# Continue
+é um comando que pula loops (funciona em qualquer estrutura de repetição: `while`, `for`, `do-while`)
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i = 1;
+    while(i<=10){
+        if(i==5){
+            i++;
+            continue;
+        }
+        cout << i << endl;
+        i++;
+    }
+    return 0;
+}
+```
+O `while` irá fazer a contagem normalmente de 1 até o 10, mas devido a presença do continue no `if` quando i for igual à 5, o loop que iria imprimir o 5 vai ser pulado.
+```
+1
+2
+3
+4
+6
+7
+8
+9
+10
 ```
