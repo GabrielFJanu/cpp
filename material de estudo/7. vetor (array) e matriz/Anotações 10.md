@@ -98,3 +98,34 @@ Elemento 2: 30
 Elemento 3: 40
 Elemento 4: 50
 ```
+# sizeof()
+sizeof() é uma função que retorna o tamanho (em bytes) de uma estrutura de armazenamento.
+
+ao ínves de fazer um `for (int i = 0; i < 5; i++)` para percorrer um vetor de tamanho 5, podemos usar:
+```
+for (int i = 0; i < sizeof(numeros)/4; i++)
+```
+como `numeros` é um vetor de tamanho 5, ele vai armazenar o valor de 5 `int` (cada um tendo 4 bytes de memória). Ou seja, no total, o tamanho de armazenamento do vetor `numeros` vai ser 20, que é o resultado de `sizeof(numeros)`.
+
+Como cada valor `int` tem **4 bytes**, então para achar o tamanho de um vetor inteiro basta fazer `sizeof(vetor)/4`.
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+    int numeros[5];
+    cout << "tamanho do vetor: " << sizeof(numeros)/4;
+}
+```
+Resposta no console:
+```
+tamanho do vetor: 5
+```
+
+Ou de forma generica (funcionando para vetores de qualquer tipo):
+```
+tamanho_do_vetor = sizeof(vetor)/sizeof(vetor[0])
+```
+>>`sizeof(vetor)` retorna o tamanho total do array (em bytes).
+`sizeof(numeros[0])` retorna o tamanho de um elemento.
+
+>**Porque usar sizeof()?** pois ao alterar o tamanho de um vetor, não é preciso alterar a linha `for (int i = 0; i < sizeof(vetor)/sizeof(vetor[0]); i++)`
