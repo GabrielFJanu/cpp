@@ -40,9 +40,10 @@ int main() {
 
 ## system("pause")
 
- Quando compila-se o código-fonte OlaMundo.cpp ele irá gerar um executável OlaMundo.exe. Quando ele é aberto, ele abre um terminal e fecha quase imediatamente, pois ele roda o código e finaliza ele muito rápido. Para resolver isso, temos que botar um `system("pause");`.
+ Quando compila-se o código-fonte OlaMundo.cpp ele irá gerar um executável OlaMundo.exe. Quando ele é aberto, ele abre um terminal e fecha quase imediatamente, pois ele roda o código e finaliza ele muito rápido. Para resolver isso, temos que botar um `system("pause");` que é uma função da biblioteca `cstdlib` (alguns compiladores já incluem essa biblioteca implicitamente, sem precisar da linha `#include <cstdlib>`).
 ```cpp
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -53,6 +54,23 @@ int main() {
 }
 ```
 Assim, abrindo o OlaMundo.exe, ele vai executar o programa, pausar e esperar o aperto de qualquer tecla para finalizar.
+## system("cls")
+é outra função da biblioteca `cstdlib`. O `system("cls");` (não funciona para o terminal do linux) limpa o terminal.
+```cpp
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Ola, mundo!\n Digite um número: ";
+    cin >> num;
+    system("cls"); //limpa o terminal
+    cout >> "Seu numero foi: " << num;
+    return 0;
+}
+```
 
 ## endl
 quebra de linha
