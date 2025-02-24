@@ -16,7 +16,7 @@ Esses parâmetros são usados para receber argumentos passados na linha de coman
 
 *  `argv[1]`, `argv[2]`, etc., contêm os argumentos passados pelo usuário.
 
->`argv` é um array de strings (`char*`), mas se você ainda não sabe o que é ponteiro, apenas entenda que ele armazena palavras do terminal como strings separadas.
+>`argv` é um array de strings (`char*`), mas como não foi ensinado o que é ponteiro ainda, apenas entenda que ele armazena palavras do terminal como strings separadas.
 
 ```cpp
 #include <iostream>
@@ -32,8 +32,12 @@ int main(int argc, char *argv[]) {
 }
 ```
 Comando no terminal (no diretório que está o programa.exe):
+> **O que é um diretório?** é uma pasta no sistema operacional.
+Ele armazena arquivos e outros diretórios (subpastas).
+Organiza os dados no disco do computador.
+Exemplos: "C:\Usuários\Documentos\" (Windows) ou "/home/user/docs/" (Linux).
 ```
-programa oi mundo 42
+C:\Users\gabriel\Desktop\cpp\material de estudo\8. funções> programa.exe oi mundo 42
 ```
 Resposta no terminal:
 ```
