@@ -2,11 +2,12 @@
 using namespace std;
 
 enum Cor {VERMELHO ,VERDE, AZUL};
+enum Numero {ZERO, UM, DOIS};
 
 int main(){
     Cor minhaCor;
-    minhaCor = VERDE;//ou minhaCor = 1 (tanto faz)
-    if(minhaCor==VERDE){
+    minhaCor = VERDE;
+    if(minhaCor==UM){//ou minhaCor == 1 (tanto faz)
         cout << "minha cor eh verde!";
     }else{
         cout << "minha cor nao eh verde!";

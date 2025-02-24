@@ -54,8 +54,8 @@ enum Cor {VERMELHO ,VERDE, AZUL};
 
 int main(){
     Cor minhaCor;
-    minhaCor = VERDE;//ou minhaCor = 1 (tanto faz)
-    if(minhaCor==VERDE){
+    minhaCor = VERDE;
+    if(minhaCor==VERDE){//ou minhaCor==1(tanto faz)
         cout << "minha cor eh verde!";
     }else{
         cout << "minha cor nao eh verde!";
@@ -63,3 +63,32 @@ int main(){
     return 0;
 }
 ```
+### Possível problema:
+```cpp
+#include <iostream>
+using namespace std;
+
+enum Cor {VERMELHO ,VERDE, AZUL};
+enum Numero {ZERO, UM, DOIS};
+
+int main(){
+    Cor minhaCor;
+    minhaCor = VERDE;
+    if(minhaCor==UM){
+        cout << "minha cor eh verde!";
+    }else{
+        cout << "minha cor nao eh verde!";
+    }
+    return 0;
+}
+```
+Resposta no console:
+```
+minha cor eh verde!
+```
+`minhaCor` foi inivializada como `VERDE` mas no a expressão lógica `minhaCor==UM` é verdadeira.
+
+>**Por que isso funciona, mesmo minhaCor sendo VERDE e não UM?**
+O problema ocorre porque enum tradicional (`enum`) em C++ armazena valores como `int` e não tem verificação de tipo estrita. Como os valores de `Cor` e `Numero` são apenas números inteiros no fundo, o compilador permite comparar minhaCor (que é VERDE = 1) com UM = 1 e considera a comparação verdadeira.
+
+> Para resolver isso, temos que implementar o conceito de classe ou `class` mais adiante
